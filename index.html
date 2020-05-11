@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <script src="dist/js/main.min.js" defer type="module"></script>
+    <title>Like Finder</title>
+  </head>
+  <body>
+    <div class="container" style="display: none;">
+      <div class="heading">
+        <h3>
+          <span id="like-person-name">Someone</span> maybe like you
+          <i class="fas fa-laugh-wink"></i>
+        </h3>
+      </div>
+      <div class="body">
+        <div class="body__part-1 male" id="male">
+          <img src="img/male/unknown.png" alt="unknown" class="body__img" />
+          <h4 class="body__name"></h4>
+        </div>
+        <div class="body__middle-animation startAnimate">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="body__part-2 female" id="female">
+          <img src="img/female/unknown.jpg" alt="unknown" class="body__img" />
+
+          <h4 class="body__name"></h4>
+        </div>
+      </div>
+      <div class="finde">
+        <button class="finde__btn" id="finde-btn">Finde</button>
+      </div>
+      <div class="description">
+        <h5 class="description__text">It's just for fun don't be serious</h5>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal__body">
+        <h4 class="modal__gender">
+          Your gender
+        </h4>
+
+        <label class="label-wrapper">
+          Male
+          <input
+            type="radio"
+            value="male"
+            name="gender"
+            id="male"
+            class="male"
+          />
+          <span class="male-icon"></span>
+        </label>
+
+        <label class="label-wrapper">
+          Female
+          <input
+            type="radio"
+            value="female"
+            name="gender"
+            id="female"
+            class="female"
+          />
+
+          <span class="female-icon"></span>
+        </label>
+
+        <h4 class="body__name">Your name</h4>
+
+        <input
+          type="text"
+          class="body__input-name"
+          placeholder="search name..."
+          id="name"
+          disabled="true"
+        />
+        <ul class="name-list">
+          <li class="name-list__item">
+            <img src="img/rabina.jpg" alt="rabina" class="name-list__img" />
+            <h5 class="name-list__name">Rabina</h5>
+          </li>
+        </ul>
+        <button class="body__confirm-btn" disabled="true">Confirm</button>
+      </div>
+    </div>
+  </body>
+</html>
